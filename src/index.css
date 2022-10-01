@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  @apply bg-emerald-200 text-slate-900;
+	font-family: 'Quicksand', sans-serif;
+}
