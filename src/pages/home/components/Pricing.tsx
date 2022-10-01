@@ -10,11 +10,14 @@ export default function Pricing() {
   const [plans, setPlans] = useState<ReceivedPlansType[]>([]);
 
   const getPlans = useCallback(async () => {
+    console.log('getPlans')
     const { data }: AxiosPlansType = await axios.get(plansURL);
+    console.log('data', data)
     setPlans(data.data);
   }, []);
 
   useEffect(() => {
+    console.log('start')
     getPlans();
   }, [getPlans]);
 
