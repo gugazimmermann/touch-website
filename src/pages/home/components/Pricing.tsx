@@ -6,7 +6,6 @@ import { PLANS_TYPE } from "../../../ts/enums";
 const plansURL = process.env.REACT_APP_PLANS || "";
 
 export default function Pricing() {
-  // TODO: change it when working in the languages of the website
   const [plans, setPlans] = useState<ReceivedPlansType[]>([]);
 
   const getPlans = useCallback(async () => {
@@ -123,7 +122,7 @@ export default function Pricing() {
         <h1 className="w-full text-5xl font-bold leading-tight text-center">
           Preços
         </h1>
-        {!!plans.length && (
+        {plans && !!plans.length && (
           <div className="flex flex-col sm:flex-row justify-center pt-6 my-12 sm:my-4">
             {basic(plans.find((x) => x.type === PLANS_TYPE.BASIC) as ReceivedPlansType)}
             {advanced(plans.find((x) => x.type === PLANS_TYPE.ADVANCED)as ReceivedPlansType)}
