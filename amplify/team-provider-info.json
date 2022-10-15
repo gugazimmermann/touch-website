@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-touchsistemaswebsite-dev-133306-authRole",
+      "UnauthRoleArn": "arn:aws:iam::589202358368:role/amplify-touchsistemaswebsite-dev-133306-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::589202358368:role/amplify-touchsistemaswebsite-dev-133306-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-touchsistemaswebsite-dev-133306-deployment",
+      "UnauthRoleName": "amplify-touchsistemaswebsite-dev-133306-unauthRole",
+      "StackName": "amplify-touchsistemaswebsite-dev-133306",
+      "StackId": "arn:aws:cloudformation:us-east-1:589202358368:stack/amplify-touchsistemaswebsite-dev-133306/0dabb680-4ca7-11ed-a8a5-12814d230427",
+      "AmplifyAppId": "d2ki6sluhy4aoc"
+    }
+  }
+}
